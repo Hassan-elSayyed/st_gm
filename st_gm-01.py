@@ -28,3 +28,4 @@ df.set_index('Country', inplace=True)
 if st.checkbox('Display Source Data', True):
     # st.subheader('Source Data')
     st.write(df)
+'`Free material from` www.gapminder.org'
