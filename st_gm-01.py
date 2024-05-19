@@ -37,3 +37,8 @@ def lifespan():
     return fig
 bubble_anim = lifespan()
 st.write(bubble_anim)
+
+
+if st.checkbox('Raw Data', True):
+    st.subheader('Raw Data')
+    st.write(gm_df)
