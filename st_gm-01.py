@@ -15,7 +15,7 @@ st.markdown("##### `Hover or click any where there is something!`")
 gm_df = px.data.gapminder()
 @st.cache_data
 def lifespan():
-    labels = dict(pop='Population', gdpPercap='DGP per Capita', lifeExp='Life Expectancy')
+    labels = dict(pop='Population', gdpPercap='DGP per capita', lifeExp='Life Expectancy')
     fig = px.scatter(gm_df, x='gdpPercap', y='lifeExp', color='continent', size='pop', size_max=60, hover_name='country', animation_frame='year', animation_group='country', log_x=True, range_x=[250, 100000], range_y=[25, 90], labels=labels, width=700, height=600)
     # fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 1000
     return fig
