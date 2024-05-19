@@ -1,3 +1,3 @@
-# st_gapminder.
+# st_gm
 Practice. Streamlit. 1st app. 
 
