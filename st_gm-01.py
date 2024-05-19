@@ -25,6 +25,6 @@ st.write(bubble_anim)
 df = px.data.gapminder()
 df.rename(columns={'country':'Country', 'continent':'Continent', 'year':'Year', 'lifeExp':'Life Expectancy', 'pop':'Population', 'gdpPercap':'GDP Per Capita'}, inplace=True)
 df.set_index('Country', inplace=True)
-if st.checkbox('Raw Data', True):
-    st.subheader('Raw Data')
+if st.checkbox('Display Source Data', True):
+    # st.subheader('Source Data')
     st.write(df)
